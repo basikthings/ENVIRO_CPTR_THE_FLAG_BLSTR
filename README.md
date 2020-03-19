@@ -68,3 +68,5 @@ Capture the Flag Agents
 
 
 <img src = "https://github.com/basikthings/ENVIRO_CPTR_THE_FLAG_BLSTR/tree/master/images/gameplay.png" height = 20%>
+
+![Image of Gameplay] (https://github.com/basikthings/ENVIRO_CPTR_THE_FLAG_BLSTR/tree/master/images/gameplay.png)
