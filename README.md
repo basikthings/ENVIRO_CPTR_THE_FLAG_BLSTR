@@ -68,6 +68,11 @@ Capture the Flag Agents
 
 - ***map_end***: The four walls of the map are elimination zones that brings the players back to their respective bases. Players compete to push each other into the map_ends to impede the opponents progress. 
 
+Game Dynamics 
+=== 
 
+Open Map
 <img src = "https://github.com/basikthings/ENVIRO_CPTR_THE_FLAG_BLSTR/blob/master/images/gameplay.png?raw=true">
 
+Water Wall to Block 
+<img src = "https://github.com/basikthings/ENVIRO_CPTR_THE_FLAG_BLSTR/blob/master/images/water_wall.png?raw=true">
