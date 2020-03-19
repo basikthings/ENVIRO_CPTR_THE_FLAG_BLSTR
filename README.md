@@ -76,3 +76,6 @@ Open Map
 
 Water Wall to Block 
 <img src = "https://github.com/basikthings/ENVIRO_CPTR_THE_FLAG_BLSTR/blob/master/images/water_wall.png?raw=true">
+
+Moving Wall used to Block Water to clear a Path
+<img src = "https://github.com/basikthings/ENVIRO_CPTR_THE_FLAG_BLSTR/blob/master/images/wall_path.png?raw=true">
