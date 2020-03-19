@@ -72,7 +72,7 @@ class Player1Controller : public Process, public AgentInterface {
         });
 
         //! When the Player collides with the perimeter, the Player respawns back in the original position. 
-        notice_collisions_with("map", [&](Event &e) {
+        notice_collisions_with("map_end", [&](Event &e) {
             if (flag_state == CAPTURED){
                 flag_state = MISSING; 
             }

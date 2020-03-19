@@ -22,22 +22,22 @@
             "position": { "x": 700, "y": 0, "theta": 3.141592653589793238463 }
         },
         {
-            "definition": "defs/map.json",
+            "definition": "defs/map_end.json",
             "style": { "fill": "midnightblue", "stroke": "midnightblue" },
             "position": { "x": -745, "y": 0, "theta": 0}
         },
         {
-            "definition": "defs/map.json",
+            "definition": "defs/map_end.json",
             "style": { "fill": "midnightblue", "stroke": "midnightblue" },
             "position": { "x": 745, "y": 0, "theta": 0}
         },
         {
-            "definition": "defs/map.json",
+            "definition": "defs/map_end.json",
             "style": { "fill": "midnightblue", "stroke": "midnightblue" },
             "position": { "x": 0, "y": 400, "theta": 1.570796326795}
         },
         {
-            "definition": "defs/map.json",
+            "definition": "defs/map_end.json",
             "style": { "fill": "midnightblue", "stroke": "midnightblue" },
             "position": { "x": 0, "y": -400, "theta": 1.570796326795}
         }

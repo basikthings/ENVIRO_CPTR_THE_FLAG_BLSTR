@@ -11,7 +11,7 @@ class WaterController : public Process, public AgentInterface {
     WaterController() : Process(), AgentInterface(), counter(0) {}
 
     void init() {
-        notice_collisions_with("map", [&](Event &e) {
+        notice_collisions_with("map_end", [&](Event &e) {
             remove_agent(id());
         });           
     }
