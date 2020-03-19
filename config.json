@@ -1,0 +1,176 @@
+{
+
+    "name": "My Enviro Project",
+    "ip": "0.0.0.0",
+    "port": 8765,
+    "buttons": [],
+
+    "agents": [  
+        {
+            "definition": "defs/goal.json",
+            "style": { "fill": "lightblue", "stroke": "black" },
+            "position": { "x": 0, "y": -350, "theta": 0 }
+        },
+        {
+            "definition": "defs/player1.json",
+            "style": { "fill": "skyblue", "stroke": "black" },
+            "position": { "x": -700, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/player2.json",
+            "style": { "fill": "salmon", "stroke": "black" },
+            "position": { "x": 700, "y": 0, "theta": 3.141592653589793238463 }
+        },
+        {
+            "definition": "defs/map.json",
+            "style": { "fill": "midnightblue", "stroke": "midnightblue" },
+            "position": { "x": -745, "y": 0, "theta": 0}
+        },
+        {
+            "definition": "defs/map.json",
+            "style": { "fill": "midnightblue", "stroke": "midnightblue" },
+            "position": { "x": 745, "y": 0, "theta": 0}
+        },
+        {
+            "definition": "defs/map.json",
+            "style": { "fill": "midnightblue", "stroke": "midnightblue" },
+            "position": { "x": 0, "y": 400, "theta": 1.570796326795}
+        },
+        {
+            "definition": "defs/map.json",
+            "style": { "fill": "midnightblue", "stroke": "midnightblue" },
+            "position": { "x": 0, "y": -400, "theta": 1.570796326795}
+        }
+                      
+    ],
+
+    "references": [
+        {
+            "definition": "defs/water.json",
+            "style": { "fill": "yellow", "stroke": "black" },
+            "position": { "x": 0, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/wall.json",
+            "style": { "fill": "yellow", "stroke": "black" },
+            "position": { "x": 0, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/flag1.json",
+            "style": { "fill": "pink", "stroke": "black" },
+            "position": { "x": -600, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/flag2.json",
+            "style": { "fill": "pink", "stroke": "black" },
+            "position": { "x": -600, "y": 0, "theta": 0 }
+        }
+             
+    ],
+
+    "invisibles": [
+        {
+            "definition": "defs/coordinator.json",
+            "rendered": false
+        }   
+    ],
+
+    "statics": [
+        
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 252, "y": 300 },
+                { "x": 414, "y": 279 },
+                { "x": 380, "y": 114 },
+                { "x": 371, "y": 112 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 380, "y": 114 },
+                { "x": 416, "y": -73 },
+                { "x": 406, "y": -76 },
+                { "x": 371, "y": 112 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 416, "y": -73 },
+                { "x": 513, "y": -135 },
+                { "x": 477, "y": -234 },
+                { "x": 351, "y": -243 },
+                { "x": 306, "y": -135 },
+                { "x": 328, "y": -122 },
+                { "x": 406, "y": -76 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+
+                { "x": 306, "y": -135 },
+                { "x": 87, "y": 50 },
+                { "x": 100, "y": 53 },
+                { "x": 328, "y": -122 }
+
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+
+                { "x": 87, "y": 50 },
+                { "x": -36, "y": 28 },
+                { "x": -48, "y": 30 },
+                { "x": -180, "y": 153 },
+                { "x": -162, "y": 252 },
+                { "x": 27, "y": 198 },
+                { "x": 100, "y": 53 }
+
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -36, "y": 28 },
+                { "x": -252, "y": -198 },
+                { "x": -262, "y": -192 },
+                { "x": -48, "y": 30 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -252, "y": -198 },
+                { "x": -432, "y": -297 },
+                { "x": -540, "y": -162 },
+                { "x": -423, "y": -90 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -423, "y": -90 },
+                { "x": -439, "y": 21 },
+                { "x": -429, "y": 26 },
+                { "x": -411, "y": -97 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -439, "y": 21 },
+                { "x": -583, "y": 89 },
+                { "x": -619, "y": 234 },
+                { "x": -333, "y": 300 },
+                { "x": -429, "y": 26 }
+            ]
+        }
+
+
+    ]
+
+}
