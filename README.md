@@ -3,7 +3,7 @@
 ENVIRO BASED CAPTURE THE FLAG
 ===
 
-Goal: For my final project for ECE520, I will be building a 2D capture the flag game with novel game play dynamics. This repo is a prototype of the game that demonstrates the key aspects of the game play.
+Goal: For my final project for ECE520, I will be building a 2D capture the flag game with novel game play dynamics using [ENVIRO](https://github.com/klavinslab/enviro), a multi-agent, mult-user, simulator. This repo is a prototype of the game that demonstrates the key aspects of the game play.
 
 This game is very much like a traditonal capture the flag game with some novel game play dynamics. 
 
@@ -37,7 +37,7 @@ Navigate to the folder on a command line and enter
 docker run -p80:80 -p8765:8765 -v $PWD/:/source -it klavins/enviro:v1.6 bash
 ```
 
-This will start a container environment using Docker provided by Professor Klavins
+This will start a container environment using Docker provided by Professor Klavins with all the [ENVIRO](https://github.com/klavinslab/enviro) code installed
 
 ```bash 
 make
@@ -52,9 +52,11 @@ Enjoy!
 
 Gamplay
 ===
+The object of the game is to score as many points as possible and prevent your opponent from scoring points. Points are scored by capturing the flag that is matched to your player color, and delivering it to the goal box designated by the circle at the top of the screen. If the player is knocked off into the wall_end before reaching the goal, both the player and the flag return to their original positions without scoring any points. Each players points are tallied up.
+
 Capture the Flag Agents
 ---
-- ***player***: Is the character that the user controls using a D pad spanned by {w,a,s,d} or {i,j,k,l}. The players can also shoot a stream of water by holding down {f} or {;} respectively for the two players. The players can also put up high mass walls on either side to block the opponents stream of water {c,t} or [.,[} respectively.  
+- ***player***: Is the character that the user controls using a D pad spanned by {w,a,s,d} or {i,j,k,l} for player1 and player2 respectively. The players can also shoot a stream of water by holding down {f} or {;} respectively for the two players. The players can also put up high mass walls on either side to block the opponents stream of water {c,t} or [.,[} respectively.  
 
 - ***flag***: The player needs to run into the flag to capture it. 
 
@@ -62,7 +64,7 @@ Capture the Flag Agents
 
 - ***water***: Water is shot from each of the players. There's a bit of bending the laws of physics here, but the water is made to weigh nearly the same as the mass of the player. This gives each player the ability to use their own water stream to push the opposing players. 
 
-- ***wall***: Walls can be dropped by the players as a way to protect against opposing player  water streams or to use a way to deflect your own water stream. 
+- ***wall***: Walls can be dropped by the players as a way to protect against opposing player  water streams or to use a way to deflect your own water stream. A maximum of 4 walls can be placed at any one time by a user. Walls can also be pushed out of the way by shooting enough water. Instead of a completely static wall. The wall is instantiated with a very large mass compared to all other objects and set to move and a slow rate. The slow moving walls add an interesting game play dynamic that allows the players to still traverse space while being protected. 
 
 - ***map_end***: The four walls of the map are elimination zones that brings the players back to their respective bases. Players compete to push each other into the map_ends to impede the opponents progress. 
 

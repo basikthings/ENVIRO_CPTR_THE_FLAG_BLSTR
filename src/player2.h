@@ -26,6 +26,7 @@ class Player2Controller : public Process, public AgentInterface {
                     x() + 17*cos(angle()-PI_DEF/2), 
                     y() + 17*sin(angle()-PI_DEF/2), 
                     angle(), WATER_STYLE);
+                wall.apply_force(70000,0); 
                 walls.push_front(wall);  
                 walling_left = true; 
                 if(walls.size()>max_wall){
@@ -36,6 +37,7 @@ class Player2Controller : public Process, public AgentInterface {
                     x() + 17*cos(angle()+PI_DEF/2), 
                     y() + 17*sin(angle()+PI_DEF/2), 
                     angle(), WATER_STYLE);
+                wall.apply_force(70000,0);
                 walls.push_front(wall);  
                 walling_right = true; 
                 if(walls.size()>max_wall){
@@ -122,21 +124,21 @@ class Player2Controller : public Process, public AgentInterface {
                             y() + 25*sin(angle()), 
                             angle(), 
                             WATER_STYLE);    
-                            water.omni_apply_force(1000*cos(angle()),1200*sin(angle()));
+                            water.omni_apply_force(1200*cos(angle()),1200*sin(angle()));
             
             Agent& water2 = add_agent("water", 
                             x() + 18*cos(angle()-0.3), 
                             y() + 18*sin(angle()-0.3), 
                             angle(), 
                             WATER_STYLE);    
-                            water2.omni_apply_force(1000*cos(angle()),1200*sin(angle()));
+                            water2.omni_apply_force(1200*cos(angle()),1200*sin(angle()));
 
             Agent& water3 = add_agent("water", 
                             x() + 18*cos(angle()+0.3), 
                             y() + 18*sin(angle()+0.3), 
                             angle(), 
                             WATER_STYLE);    
-                            water3.omni_apply_force(1000*cos(angle()),1200*sin(angle()));
+                            water3.omni_apply_force(1200*cos(angle()),1200*sin(angle()));
         }
         
         //! Controls the velocity based on keystroke positions. 
